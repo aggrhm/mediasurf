@@ -1,5 +1,7 @@
-PATH
-  remote: ~/Projects/lib/quick_file
+GIT
+  remote: git://github.com/agquick/quick_file.git
+  revision: 31b1c8a88624f8761b110127bc47b725879263ba
+  tag: develop
   specs:
     quick_file (1.4.1)
       activesupport
