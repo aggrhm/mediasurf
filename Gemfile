@@ -5,3 +5,4 @@ gem 'thin'
 
 gem 'quick_file', github: 'agquick/quick_file', tag: 'develop'
 #gem 'quick_file', path: '~/Projects/lib/quick_file'
+#gem 'stacktor', path: '~/Projects/lib/stacktor'
