@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/agquick/quick_file.git
-  revision: 79384c8455216a8f68d0512d9a95ffbc694b90c8
-  tag: v1.6.1
+  revision: 4660d923ffb7a299501e345bc60598f018ce14c9
+  tag: v1.8.0
   specs:
-    quick_file (1.6.1)
+    quick_file (1.8.0)
       activesupport
       aws-sdk (= 1.59)
       mime-types
@@ -13,7 +13,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.1)
+    activesupport (4.2.4)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -30,17 +30,17 @@ GEM
     json (1.8.3)
     mime-types (2.6.1)
     mini_portile (0.6.2)
-    minitest (5.7.0)
+    minitest (5.8.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
-    rmagick (2.15.2)
-    sinatra (1.4.5)
+    rmagick (2.15.4)
+    sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
-      tilt (~> 1.3, >= 1.3.4)
+      tilt (>= 1.3, < 3)
     stacktor (1.1.2)
       activesupport
     thin (1.6.3)
@@ -48,7 +48,7 @@ GEM
       eventmachine (~> 1.0)
       rack (~> 1.0)
     thread_safe (0.3.5)
-    tilt (1.4.1)
+    tilt (2.0.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
 
@@ -57,5 +57,5 @@ PLATFORMS
 
 DEPENDENCIES
   quick_file!
-  sinatra (= 1.4.5)
+  sinatra (= 1.4.6)
   thin

@@ -79,10 +79,10 @@ badd +1 Gemfile
 badd +1 app.rb
 badd +1 config/quick_file.rb
 badd +2 lib/simple_cache.rb
-badd +0 lib/response_cache.rb
+badd +1 lib/response_cache.rb
 args Gemfile
 set lines=40 columns=80
-winpos 716 242
+winpos 753 242
 edit Gemfile
 set splitbelow splitright
 set nosplitbelow
@@ -123,7 +123,7 @@ setlocal cryptmethod=
 setlocal nocursorbind
 setlocal nocursorcolumn
 setlocal nocursorline
-setlocal define=
+setlocal define=^\\s*#\\s*define
 setlocal dictionary=
 setlocal nodiff
 setlocal equalprg=
@@ -201,12 +201,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 4 - ((3 * winheight(0) + 19) / 38)
+let s:l = 6 - ((5 * winheight(0) + 19) / 38)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-4
-normal! 0
+6
+normal! 060|
 tabedit app.rb
 set splitbelow splitright
 set nosplitbelow
@@ -325,12 +325,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 22 - ((14 * winheight(0) + 19) / 38)
+let s:l = 30 - ((22 * winheight(0) + 19) / 38)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-22
-normal! 017|
+30
+normal! 09|
 tabedit config/quick_file.rb
 set splitbelow splitright
 set nosplitbelow
@@ -449,11 +449,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 5 - ((4 * winheight(0) + 19) / 38)
+let s:l = 2 - ((1 * winheight(0) + 19) / 38)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-5
+2
 normal! 03|
 tabedit lib/response_cache.rb
 set splitbelow splitright
@@ -579,7 +579,7 @@ exe s:l
 normal! zt
 8
 normal! 09|
-tabnext 4
+tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif

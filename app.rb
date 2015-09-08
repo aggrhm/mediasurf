@@ -27,6 +27,7 @@ get "/*/*" do |storage_name, file_key|
 
   content_type resp[:content_type]
   etag resp[:etag]
+  headers["Access-Control-Allow-Origin"] = "*"
 =begin
   stream do |out|
     obj.read do |chunk|
